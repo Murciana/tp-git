@@ -30,4 +30,9 @@ public class UtilisateurService {
 				.forEach(IO::println);
 	}
 
+	public void rechercherTous(){
+		utilisateurRepository.utilisateurs.stream()
+				.forEach(IO::println);
+	}
+
 }
