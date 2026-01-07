@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UtilisateurRepository {
-	List<Utilisateur> utilisateurs = new ArrayList<>();
+	public List<Utilisateur> utilisateurs = new ArrayList<>();
 
 	public UtilisateurRepository() {
 		utilisateurs.add(new Utilisateur("jdupont", "Dupont", "Jean", "jean.dupont@mail.com"));
