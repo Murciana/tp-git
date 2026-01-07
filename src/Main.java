@@ -16,4 +16,9 @@ void main() {
     //Placez vos appels de méthodes ici
     utilisateurRepository.utilisateurs.add(utilisateurs.creerUtilisateur("Murciana", "Lebouedec"));
     utilisateurRepository.utilisateurs.forEach(utilisateur -> IO.println(utilisateur));
+	
+
+	  utilisateurRepository.utilisateurs.rechercherParId("jdupont");
+
+
 }

@@ -13,6 +13,11 @@ public class Utilisateur {
 		this.courriel = courriel;
 	}
 
+
+
+
+
+
 	public String getIdentifiant() {
 		return identifiant;
 	}

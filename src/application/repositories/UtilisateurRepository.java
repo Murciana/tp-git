@@ -15,4 +15,5 @@ public class UtilisateurRepository {
 		utilisateurs.add(new Utilisateur("lmoreau", "Moreau", "Lucie", "lucie.moreau@mail.com"));
 		utilisateurs.add(new Utilisateur("cgarcia", "Garcia", "Camille", "camille.garcia@mail.com"));
 	}
+
 }

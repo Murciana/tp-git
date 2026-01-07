@@ -22,4 +22,12 @@ public class UtilisateurService {
 	public UtilisateurRepository getUtilisateurRepository() {
 		return utilisateurRepository;
 	}
+
+	public void rechercherParId(String identifiant) {
+
+		utilisateurRepository.utilisateurs.stream()
+				.filter(utilisateur -> utilisateur.getIdentifiant().equals(identifiant))
+				.forEach(IO::println);
+	}
+
 }
