@@ -29,4 +29,7 @@ void main() {
     tacheRepository.taches.add(taches.creerTache("Tache1", "manger"));
     tacheRepository.taches.forEach(IO::println);
 
+    taches.completerTache(7);
+
+
 }
