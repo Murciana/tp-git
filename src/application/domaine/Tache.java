@@ -5,6 +5,7 @@ public class Tache {
 	private String titre;
 	private Etat etat;
 	private String idUtilisateurAssigne;
+	private String description;
 
 	public Tache(int id, String titre, Etat etat, String idUtilisateurAssigne) {
 		this.id = id;

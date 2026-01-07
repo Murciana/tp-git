@@ -6,6 +6,8 @@ import application.domaine.Utilisateur;
 import application.repositories.TacheRepository;
 import application.repositories.UtilisateurRepository;
 
+import static application.domaine.Etat.NON_ASSIGNEE;
+
 public class TacheService {
 
 	private int compteurId = 11;
@@ -26,5 +28,8 @@ public class TacheService {
 		IO.println(tacheAAssigner);
 
 
+	public Tache creerTache(String titre, String description){
+		int id = compteurId ++;
+		return new Tache(id, titre, NON_ASSIGNEE, null, description);
 	}
 }

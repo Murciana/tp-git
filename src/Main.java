@@ -1,5 +1,6 @@
 import application.domaine.Tache;
 import application.domaine.Utilisateur;
+import application.repositories.TacheRepository;
 import application.repositories.UtilisateurRepository;
 import application.services.TacheService;
 import application.services.UtilisateurService;
@@ -9,6 +10,7 @@ void main() {
 //    List<Tache> listeTaches = new ArrayList<>();
 
     UtilisateurRepository utilisateurRepository = new UtilisateurRepository();
+    TacheRepository tacheRepository = new TacheRepository();
 
     TacheService taches = new TacheService();
     UtilisateurService utilisateurs = new UtilisateurService();
@@ -24,5 +26,7 @@ void main() {
     IO.println(utilisateurs.rechercherParId("jdupont"));
 
     taches.assigner(5, "jdupont");
+    tacheRepository.taches.add(taches.creerTache("Tache1", "manger"));
+    tacheRepository.taches.forEach(IO::println);
 
 }
