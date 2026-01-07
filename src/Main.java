@@ -16,7 +16,9 @@ void main() {
     //Placez vos appels de méthodes ici
     utilisateurRepository.utilisateurs.add(utilisateurs.creerUtilisateur("Murciana", "Lebouedec"));
     utilisateurRepository.utilisateurs.forEach(IO::println);
-
+  
+    utilisateurs.rechercherTous();
+  
     IO.println(utilisateurs.rechercherParId("jdupont"));
     utilisateurs.modifierCourriel("jdupont", "jojo.dupont@mail.com");
     IO.println(utilisateurs.rechercherParId("jdupont"));

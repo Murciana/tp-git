@@ -36,4 +36,9 @@ public class UtilisateurService {
         Utilisateur utilisateur = rechercherParId(identifiant);
         utilisateur.setCourriel(courriel);
     }
+	public void rechercherTous(){
+		utilisateurRepository.utilisateurs.stream()
+				.forEach(IO::println);
+	}
+
 }
