@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TacheRepository {
-	List<Tache> taches = new ArrayList<>();
+	public List<Tache> taches = new ArrayList<>();
 
 	public TacheRepository() {
 		taches.add(new Tache(1, "Créer le projet", Etat.TERMINEE, "jdupont"));

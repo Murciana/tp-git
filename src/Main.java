@@ -22,4 +22,7 @@ void main() {
     IO.println(utilisateurs.rechercherParId("jdupont"));
     utilisateurs.modifierCourriel("jdupont", "jojo.dupont@mail.com");
     IO.println(utilisateurs.rechercherParId("jdupont"));
+
+    taches.assigner(5, "jdupont");
+
 }

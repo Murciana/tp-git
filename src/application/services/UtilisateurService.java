@@ -1,6 +1,8 @@
 package application.services;
 
+import application.domaine.Tache;
 import application.domaine.Utilisateur;
+import application.repositories.TacheRepository;
 import application.repositories.UtilisateurRepository;
 
 public class UtilisateurService {
@@ -40,5 +42,14 @@ public class UtilisateurService {
 		utilisateurRepository.utilisateurs.stream()
 				.forEach(IO::println);
 	}
+
+    public void supprimerUtilisateur(String identifiant){
+        utilisateurRepository.utilisateurs.remove(rechercherParId(identifiant));
+
+
+
+
+
+    }
 
 }
