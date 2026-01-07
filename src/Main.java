@@ -12,4 +12,8 @@ void main() {
 
 
 	//Placez vos appels de méthodes ici
+
+	utilisateurs.rechercherParId("jdupont");
+
+
 }
