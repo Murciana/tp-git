@@ -25,6 +25,7 @@ void main() {
     utilisateurs.modifierCourriel("jdupont", "jojo.dupont@mail.com");
     IO.println(utilisateurs.rechercherParId("jdupont"));
 
+    taches.assigner(5, "jdupont");
     tacheRepository.taches.add(taches.creerTache("Tache1", "manger"));
     tacheRepository.taches.forEach(IO::println);
 

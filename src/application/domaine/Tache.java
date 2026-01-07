@@ -14,14 +14,6 @@ public class Tache {
 		this.idUtilisateurAssigne = idUtilisateurAssigne;
 	}
 
-	public Tache(int id, String titre, Etat etat, String idUtilisateurAssigne, String description) {
-		this.id = id;
-		this.titre = titre;
-		this.etat = etat;
-		this.idUtilisateurAssigne = idUtilisateurAssigne;
-		this.description = description;
-	}
-
 	public int getId() {
 		return id;
 	}
@@ -54,14 +46,6 @@ public class Tache {
 		this.idUtilisateurAssigne = idUtilisateurAssigne;
 	}
 
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
 	@Override
 	public String toString() {
 		return "Tache{" +
@@ -69,7 +53,6 @@ public class Tache {
 				", titre='" + titre + '\'' +
 				", etat=" + etat +
 				", idUtilisateurAssigne='" + idUtilisateurAssigne + '\'' +
-				", description='" + description + '\'' +
 				'}';
 	}
 }
