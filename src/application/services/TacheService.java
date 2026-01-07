@@ -18,4 +18,11 @@ public class TacheService {
 		int id = compteurId ++;
 		return new Tache(id, titre, NON_ASSIGNEE, null, description);
 	}
+
+	public void rechercherParUtilisateur(String identifiantUtilisateur){
+		tacheRepository.taches.stream()
+				.filter(tache -> identifiantUtilisateur.equals(tache.getIdUtilisateurAssigne()))
+				.forEach(tache -> IO.println("tâche trouvée: " + tache));
+
+	}
 }
